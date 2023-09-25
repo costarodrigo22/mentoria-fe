@@ -9,7 +9,7 @@ export default function ContactsList() {
       <Header>
         <strong>3 contatos</strong>
 
-        <a href='/'>Novo contato</a>
+        <a href='/new'>Novo contato</a>
       </Header>
 
       <Separator />

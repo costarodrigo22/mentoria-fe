@@ -1,22 +1,13 @@
-import Button from "../../components/Button";
-import Input from "../../components/Input";
+import ContactForm from "../../components/ContactForm";
 import PageHeader from "../../components/PageHeader";
-import Select from "../../components/Select";
 
 export default function NewContact() {
   return (
     <>
       <PageHeader title='Novo contato' />
 
-      <Input />
+      <ContactForm buttonLabel='Cadastrar' />
 
-      <Select>
-        <option>opção 01</option>
-        <option>opção 01</option>
-        <option>opção 01</option>
-      </Select>
-
-      <Button>Cadastrar</Button>
     </>
   );
 }
