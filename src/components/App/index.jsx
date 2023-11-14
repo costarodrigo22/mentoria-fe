@@ -1,9 +1,10 @@
-import { GlobalStyles } from '../../assets/styles/Global';
-import { Container, ContainerHeader } from './styles';
-import Router from '../../Router';
-import { BrowserRouter } from 'react-router-dom';
+import { GlobalStyles } from "../../assets/styles/Global";
+import { Container, ContainerHeader } from "./styles";
+import Router from "../../Router";
+import { BrowserRouter } from "react-router-dom";
+import { Toaster } from "react-hot-toast";
 
-import logo from '../../assets/images/logo.svg';
+import logo from "../../assets/images/logo.svg";
 
 export default function App() {
   return (
@@ -13,9 +14,9 @@ export default function App() {
         <ContainerHeader>
           <img src={logo} />
         </ContainerHeader>
-
+        <Toaster />
         <Router />
       </Container>
     </BrowserRouter>
-  )
+  );
 }
